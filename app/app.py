@@ -11,7 +11,7 @@ profit_by_quarter = df.groupby('quarter')['profit_egp'].sum().reset_index()
 profit_by_quarter_bar = px.bar(profit_by_quarter, x='quarter', y='profit_egp')
 
 # Initialize app
-app = Dash(__name__)
+app = Dash(__name__) 
 app.title = 'Retail Analysis Dashboard'
 
 app.layout = html.Div([
